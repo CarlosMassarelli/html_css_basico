@@ -1,0 +1,117 @@
+/* CSS para testes de diversas ferramentas... */
+h1,h2, h3, p, div .inicio{
+	text-align: right; 
+	margin left:10%;
+	}
+p{
+	color: red;
+}
+
+.d21210610{
+	text-align: center;
+	color: rgb(138, 43, 226);
+}
+.d20210627 p{
+	text-align: center;
+}
+#unico{
+	color: rgb(138, 43, 226);
+}
+.varios{
+	color: #3d2be2;
+}
+.semicirculo h2{
+	text-align: center;
+}
+#movimento2 {
+	text-align: center;
+}
+.indice p{
+	text-align: left;
+}
+.indice h3{
+	text-align: center;
+}
+p:target {
+  background-color: gold;
+}
+
+/* Add a pseudo-element inside the target element */
+p:target::before {
+  font: 70% sans-serif;
+  content: "►";
+  color: limegreen;
+  margin-right: .25em;
+}
+
+/* Style italic elements within the target element */
+p:target i {
+  color: red;
+	text-align: left;
+}
+#estrutura_a_ref p{
+	text-align: center;
+	color: rgb(93, 201, 102);
+}
+#avisos_em_popups h2{
+	text-align: center;
+}
+/* Unopened lightbox */
+.lightbox {
+  display: none;
+}
+
+/* Opened lightbox */
+.lightbox:target {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Lightbox content */
+.lightbox figcaption {
+  width: 25rem;
+  position: relative;
+  padding: 1.5em;
+  background-color: lightpink;
+}
+
+/* Close button */
+.lightbox .close {
+  position: relative;
+  display: block;
+}
+
+.lightbox .close::after {
+  right: -1rem;
+  top: -1rem;
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  display: flex;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+  content: "×";
+  cursor: pointer;
+}
+
+/* Lightbox overlay */
+.lightbox .close::before {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0,0,0,.7);
+  content: "";
+  cursor: default;
+}

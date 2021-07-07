@@ -1,2 +1,4 @@
 # html_css_basico
-uma pagina inteira com css e html básicos.
+
+Projeto com estrutura em HTML5 e CSS de forma linear com todas as funcionalidades em uso.
+Fazendo uso das ferramentas

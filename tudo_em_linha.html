@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="autor" content="Carlos Massarelli">
+		<meta name="descrição" content="Parque Universitário Bookstore">
+		<title>PUB</title>
+		<link href="./styles/tudo_em_linha.css" rel="stylesheet">
+	</head>
+	<body>
+		<h1>Fazendo testes HTML</h1>
+		<h2>Teste de negrito h2</h2>
+		<hr>
+		<h3>Teste de negrito h3</h3>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste vero earum minima tenetur nobis, illo inventore ullam distinctio hic quam sed aspernatur doloremque dolore obcaecati sunt provident! Sapiente, possimus quam.<br>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, nesciunt. Quaerat nobis, voluptates nam architecto veniam sed doloribus! Adipisci quasi natus neque aliquid velit odio repellendus voluptatum possimus sed recusandae..
+		</p>
+		<div class="indice">
+			<h3>Tabela de elementos com href target</h3>
+			<ol>
+			 <li><a href="#p1">Pule para o primeiro parágrafo!</a></li>
+			 <li><a href="#p2">Pule para o segundo parágrafo!</a></li>
+			 <li><a href="#nowhere">Aqui não fazemos nada...</a></li>
+			</ol>
+			
+			<h3>Um pequeno artigo</h3>
+			<p id="p1">Aqui temos o primeiro parágrafo, <i>este parágrafo</i> usando um fragmento de link. Clique em outro para pular novamente!</p>
+			<p id="p2">Este é <i>outro parágrafo</i>, sendo acessível pelo link. Não é divertido?</p>
+		</div>
+		<div class="d21210610">
+			Tomorrow's temperatures:<br>
+			high 96, low 65
+		</div>
+		<div class="d20210627">
+			<p>
+				Trabalhando com "span" class e id... <br> dolor <span id="unico">sit amet consectetur</span> adipisicing elit. Ut quod itaque non culpa temporibus nihil repudiandae quaerat iste <span class="varios">molestias labore</span> deleniti adipisci reiciendis voluptatum minima, <span class="varios">architecto animi</span> odio dolorem nisi.
+			</p>
+			
+		</div>
+		<div class="semicirculo">
+			<h2>Temos algumas figuras com movimento, dinâmicas, em html... pelo animateMotion e com outra construção...</h2>
+			<svg viewBox="0 0 300 100" xmlns="namespace XML" id="movimento1"><!-- box de visualização de svg -->
+				<!-- aqui temos o caminho desenhado -->
+				<path fill="none" stroke="lightgrey"
+					d="M10,50 C10,-50 180,150 180,50 C180-50 10,150 10,50 z" />
+				<!-- aqui temos a bolinha sobre o caminho -->
+				<circle r="2" fill="blue">
+					<animateMotion dur="5s" repeatCount="indefinite"
+						path="M10,50 C10,-50 180,150 180,50 C180-50 10,150 10,50 z" />
+				</circle>
+			</svg>
+		</div>
+		<div class="semicirculo" id="movimento2">
+			<svg width="50%" height="50%"  viewBox="0 0 500 300"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink" >
+
+				<rect x="1" y="1" width="498" height="298"
+							fill="none" stroke="blue" stroke-width="2" />
+
+				<!-- Desenhe o contorno do caminho de movimento em azul, ao longo com três pequenos círculos no início, meio e fim. -->
+				<path id="path1" d="M100,250 C 100,50 400,50 400,250"
+							fill="none" stroke="blue" stroke-width="7.06"  />
+				<circle cx="100" cy="250" r="17.64" fill="blue"  />
+				<circle cx="250" cy="100" r="17.64" fill="blue"  />
+				<circle cx="400" cy="250" r="17.64" fill="blue"  />
+
+				<!-- Aqui está um triângulo que será movido ao longo do caminho do movimento. É definido com uma orientação vertical com a base no triângulo centralizado horizontalmente logo acima da origem. -->
+				<path d="M-25,-12.5 L25,-12.5 L 0,-87.5 z"
+							fill="yellow" stroke="red" stroke-width="7.06"  >
+					<!-- Defina a animação do caminho do movimento -->
+					<animateMotion dur="6s" repeatCount="indefinite" rotate="auto" >
+						<mpath xlink:href="#path1"/>
+					</animateMotion>
+				</path>
+			</svg>
+		</div>
+		<div id="estrutura_a_ref">
+			<p>
+				Aqui temos um local para clicar e seguir o local onde é possível acessar as imagens aleatórias abaixo.
+			</p>
+			<a href="https://source.unsplash.com/random" alt="imagens aleatórias">
+			<p>
+				Aqui o texto clicável para acesso ao local... além da imagem abaixo para clicar.
+				<img src="https://source.unsplash.com/random" alt="imagem aleatória" width="500" height="300">
+			</p>
+			</a>
+			<p>
+				Observe que a imagem também é clicável...
+			</p>
+		</div>
+		<div id="avisos_em_popups">
+			<h2>Novos elementos com janela transparentes e avisos</h2>
+			<ul>
+				<li><a href="#example1">Abra o exemplo #1</a></li>
+				<li><a href="#example2">Abra o exemplo #2</a></li>
+			</ul>
+			<div class="lightbox" id="example1">
+				<figure>
+					<a href="#" class="close"></a>
+					<figcaption>Estamos enviando um aviso em popup para o cliente.</figcaption>
+				</figure>
+			</div>
+			
+			<div class="lightbox" id="example2">
+				<figure>
+					<a href="#" class="close"></a>
+					<figcaption>Agora estamos enviando o exemplo 2 com o uso do elementos 'figcaption' que é uma legenda de uma imagem.</figcaption>
+				</figure>
+			</div>
+		</div>
+		<div>
+			<h2>Vamos construir tabelas com &lt;table&gt;</h2>
+			<p>
+				A construção de uma tabela não deve ser confundida com a estilização do site.				
+			</p>
+			<table>
+
+			</table>
+		</div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</body>
+</html>

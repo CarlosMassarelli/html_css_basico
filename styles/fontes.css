@@ -1,0 +1,36 @@
+body{
+  font-size: 20px;
+}
+.cm{
+  font-size: 1cm;
+}
+.mm{
+  font-size: 5mm;
+}
+.in{
+  font-size: 1in;
+}
+.px{
+  font-size: 1px;
+}
+.pt{
+  font-size: 10pt;
+}
+.pc{
+  font-size: 5pc;
+}
+.rem{
+  font-size: 1rem;
+}
+.vw{
+  font-size: 2vw;
+}
+.vh{
+  font-size: 1vh;
+}
+.hint{
+  font-size: 100%;
+}
+tbody{
+  border: 10px, green, solid;
+}

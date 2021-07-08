@@ -5,26 +5,28 @@
 		<meta name="autor" content="Carlos Massarelli">
 		<meta name="descrição" content="Parque Universitário Bookstore">
 		<title>PUB</title>
+		<link href="./styles/CSSReset_total.css" rel="resetcss">
 		<link href="./styles/tudo_em_linha.css" rel="stylesheet">
 	</head>
 	<body>
-		<h1>Fazendo testes HTML</h1>
-		<h2>Teste de negrito h2</h2>
-		<hr>
-		<h3>Teste de negrito h3</h3>
-		<p>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste vero earum minima tenetur nobis, illo inventore ullam distinctio hic quam sed aspernatur doloremque dolore obcaecati sunt provident! Sapiente, possimus quam.<br>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, nesciunt. Quaerat nobis, voluptates nam architecto veniam sed doloribus! Adipisci quasi natus neque aliquid velit odio repellendus voluptatum possimus sed recusandae..
-		</p>
+		<div class="inicio">
+			<h1>Fazendo testes HTML</h1>
+			<h2>Teste de negrito h2</h2>
+			<hr>
+			<h3>Teste de negrito h3</h3>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste vero earum minima tenetur nobis, illo inventore ullam distinctio hic quam sed aspernatur doloremque dolore obcaecati sunt provident! Sapiente, possimus quam.<br>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, nesciunt. Quaerat nobis, voluptates nam architecto veniam sed doloribus! Adipisci quasi natus neque aliquid velit odio repellendus voluptatum possimus sed recusandae..
+			</p>
+		</div>
 		<div class="indice">
-			<h3>Tabela de elementos com href target</h3>
+			<h2>Tabela de elementos com href target</h2>
 			<ol>
 			 <li><a href="#p1">Pule para o primeiro parágrafo!</a></li>
 			 <li><a href="#p2">Pule para o segundo parágrafo!</a></li>
 			 <li><a href="#nowhere">Aqui não fazemos nada...</a></li>
 			</ol>
-			
-			<h3>Um pequeno artigo</h3>
+			<h4>Texto para o href target</h4>
 			<p id="p1">Aqui temos o primeiro parágrafo, <i>este parágrafo</i> usando um fragmento de link. Clique em outro para pular novamente!</p>
 			<p id="p2">Este é <i>outro parágrafo</i>, sendo acessível pelo link. Não é divertido?</p>
 		</div>
@@ -110,12 +112,54 @@
 				</figure>
 			</div>
 		</div>
-		<div>
+		<div class="tabelas">
 			<h2>Vamos construir tabelas com &lt;table&gt;</h2>
 			<p>
 				A construção de uma tabela não deve ser confundida com a estilização do site.				
 			</p>
+			<p>
+				Neste exemplo vamos listar alguns caracteres especiais utilizados e sua forma de uso no html5, para o caso de uso na tag &lt;p&gt;, para a lista completa, consulte 
+			</p>
 			<table>
+				<caption>
+					Caracteres especiais do HTML5
+				</caption>
+				<thead>
+					<tr>
+						<th>Símbolo</th>
+						<th>Descrição</th>
+						<th>HTML5</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>&apos;</th>
+						<th>Apóstofro</th>
+						<th>&amp;apos;</th>
+					</tr>	
+					<tr>
+						<th>&quot;</th>
+						<th>Apóstrofo Duplo</th>
+						<th>&amp;quot;</th>
+					</tr>
+					<tr>
+						<th>&lt;</th>
+						<th>Menor que</th>
+						<th>&amp;lt;</th>
+					</tr>
+					<tr>
+						<th>&gt;</th>
+						<th>Maior Que</th>
+						<th>&amp;gt;</th>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<th>final</th>
+						<th>rodapé</th>
+						<th>final</th>
+					</tr>		
+				</tfoot>
 
 			</table>
 		</div>

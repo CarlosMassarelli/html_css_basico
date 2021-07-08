@@ -1,12 +1,13 @@
 /* CSS para testes de diversas ferramentas... */
-h1,h2, h3, p, div .inicio{
-	text-align: right; 
-	margin left:10%;
-	}
-p{
-	color: red;
+/* "." identifica classe - "#" identifica id (único) */
+.inicio {
+	text-align: left;
+	margin-left: 10%;
+  color: green;
 }
-
+.inicio h2, h3{
+	text-align: center; 
+}
 .d21210610{
 	text-align: center;
 	color: rgb(138, 43, 226);
@@ -114,4 +115,10 @@ p:target i {
   background-color: rgba(0,0,0,.7);
   content: "";
   cursor: default;
+}
+.tabelas div, h2{
+  text-align: center;
+}
+.tabelas div, p{
+  text-align: justify;
 }

@@ -2,11 +2,14 @@
 /* "." identifica classe - "#" identifica id (único) */
 .inicio {
 	text-align: left;
-	margin-left: 10%;
+	margin-left: 2%;
   color: green;
 }
 .inicio h2, h3{
 	text-align: center; 
+}
+.text_href{
+  color: rgb(193, 172, 243);
 }
 .d21210610{
 	text-align: center;
@@ -121,4 +124,10 @@ p:target i {
 }
 .tabelas div, p{
   text-align: justify;
+}
+#lista1{
+  list-style-type: circle;
+}
+#lista2{
+  list-style-type: "\1F321";
 }

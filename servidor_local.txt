@@ -3,17 +3,17 @@ Para rodar um servidor local em Python...
 Verifique se o python está instalado...
   >python --version
 Verifique a versão do pip
->pip --version
+  >pip --version
 Caso necessário, atualize >py -m pip install -U pip
 
 1. crie a venv (Cuidado... a venv somente funciona no CMD...) Para gerar uma máquina virtual no windows... (melhor como admin)
   https://pypi.org/project/virtualenvwrapper-win/
   >pip3 install virtualenvwrapper-win
 2. instale a instancia do django (dentro da venv) e dentro da pasta do projeto... 
-  >$ pip install django
+  > pip install django
 3. crie uma pasta para o projeto e depois inicie o administrador do django.
-  django-admin startproject mytestsite (cria o esqueleto do projeto inicial)
-  py manage.py runserver (iniciará o servidor)
+  >django-admin startproject mytestsite (cria o esqueleto do projeto inicial)
+  >py manage.py runserver (iniciará o servidor)
   rode a página http://127.0.0.1:8000/ (irá abrir o esqueleto)
 =====
 Criando uma localhost no python

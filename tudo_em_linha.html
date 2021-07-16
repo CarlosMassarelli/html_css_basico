@@ -1,10 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
-		<meta charset="utf-8">
-		<meta name="autor" content="Carlos Massarelli">
-		<meta name="descrição" content="Parque Universitário Bookstore">
-		<title>PUB</title>
+		<!-- configuração de linguagem da página -->
+		<meta charset="UTF-8">
+		<!-- portabilidade para dispositivo móvel -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- dados de busca dos "motores de busca" -->
+		<meta name="author" content="Carlos Massarelli">
+		<meta name="description" content="Descrição que aparece quando a página é exibida no buscador.">
+		<!-- indica o que os "motores de busca" devem fazer 
+		noindex = não indexar
+		nofollow = não segue links na página
+		index, follow (padrão do buscador)
+		é possível combinar padrões...
+		O link abaixo leva a uma pagina explicativa
+		https://developers.google.com/search/docs/advanced/robots/create-robots-txt?hl=pt-br
+		https://github.com/google/robotstxt
+		-->
+		<meta name="robots" content="index, nofollow" />
+		<!-- configurações para compartilhamento em redes sociais -->
+		<!-- Open Graph: facebook -->
+		<meta property="og:image" content="endereço da imagem e nome">
+		<meta property="og:description" content="texto para compartilhar no facebook">
+		<meta property="og:title" content="título do compartilhamento">
+		<!-- no twitter -->
+		<meta name="og:image" content="endereço da imagem e nome">
+		<meta name="og:description" content="texto para compartilhar no facebook">
+		<meta name="og:title" content="título do compartilhamento">
+		<!-- favicon - ícone na aba da página -->
+		<link rel="icon" href="./image/favicon.ico">
+		<!-- título que aparece na aba e nos "motores de busca"  -->
+		<title>ADC</title>
 		<link href="./styles/CSSReset_total.css" rel="resetcss">
 		<link href="./styles/tudo_em_linha.css" rel="stylesheet">
 	</head>
@@ -217,7 +243,8 @@
 			<p>Na verdade as listas são identadas... pois a ordenação é realizada pelo programador.</p>
 		</div>
 		<hr>
-		<div>
+
+		<div class="TabelasComplexas">
 			<h3>Criando tabela complexas</h3>
 			<table>
 				<caption>Disposição de elementos</caption>
@@ -245,8 +272,8 @@
 				</thead>
 				<tbody>
 					<tr>
-						<th scope="row">Teste 1</th> <!-- cabeçalho de linhas -->
-						<td>1</td>
+						<th scope="row">Teste 1 linha</th> <!-- cabeçalho de linhas -->
+						<td>Item 1 do formulário</td>
 						<td>2</td>
 						<td>3</td>
 						<td>4</td>
@@ -264,7 +291,19 @@
 					</tr>
 				</tbody>
 			</table>
+			<p>
+				Existem muitas informações incluídas no html para deixar mais acessível... como informações de blocos de colunas e linhas...
+			</p>
+			<p>
+				Foram realizadas formatações com os textos no centro, para melhor estrutura e, é possível colocar mais espaço nas bordas... usando o CSS.
+			</p>
+			<p>
+				Observe que as listas, podem ser uma espécie de tabela... no entanto, esta formatação é menos versátil para o html.
+			</p>
 		</div>
-		<div></div>
+		<hr>
+		<div>
+			
+		</div>
 	</body>
 </html>

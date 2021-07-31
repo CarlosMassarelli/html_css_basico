@@ -302,8 +302,41 @@
 			</p>
 		</div>
 		<hr>
-		<div>
-			
+		<div class="css">
+			<h2>Algumas regras para o CSS</h2>
+			<p>
+				É importante preparar um CSS (Cascading Style Sheets) de forma organizada e funcional.
+				Algumas regras são essenciais.
+			</p>
+			<p>
+				É importante criar um arquivo CSS, para que as alterações e configurações sejam organizadas. Procure nomear os elementos para evitar conflitos de configuração. 
+			</p>
+			<p>
+				A ordem de organização (preferência) dos estilos aplicados ao html é:
+			</p>
+			<ul>
+				<p>Em ordem de aplicabilidade (verifique no html):</p>
+				<ol style="color: blue">
+					1. inline, com o atributo "style";
+				</ol>
+				<ol id="style">
+					2. Com a tag "style" &lt;style&gt; e &lt;/style&gt;
+				</ol>
+				<style type="text/css">
+					#style {
+						color: red;
+					}
+				</style>				
+				<ol id="link">
+					3. Com a tag "link" chamando um arquivo externo (.css) com as formatações do html (esta é a forma mais praticada).					
+				</ol>
+				<ol>
+					4. Com o elemento "@import" que é utilizado no próprio css, no entanto, está não é uma boa prática. 
+				</ol>
+			</ul>
+			<p>
+				Como o CSS é aplicado em cascata, precisamos lembrar que as configurações podem ser aplicadas umas sobre as outras, lembrando que a aplicação é feita de cima para baixo... logo, se temos uma formatação no início do arquivo css e fazemos uma nova formatação, do mesmo elemento depois, está será a formatação do elemento.
+			</p>
 		</div>
 	</body>
 </html>

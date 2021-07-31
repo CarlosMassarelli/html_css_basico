@@ -302,8 +302,61 @@
 			</p>
 		</div>
 		<hr>
-		<div>
-			
+		<div class="css">
+			<h2>Algumas regras para o CSS</h2>
+			<p>
+				É importante preparar um CSS (Cascading Style Sheets) de forma organizada e funcional.
+				Algumas regras são essenciais.
+			</p>
+			<p>
+				É importante criar um arquivo CSS, para que as alterações e configurações sejam organizadas. Procure nomear os elementos para evitar conflitos de configuração. 
+			</p>
+			<p>
+				A ordem de organização (preferência) dos estilos aplicados ao html é:
+			</p>
+			<ul>
+				<p>Em ordem de aplicabilidade (verifique no html):</p>
+				<ol style="color: blue">
+					1. inline, com o atributo "style";
+				</ol>
+				<ol id="style">
+					2. Com a tag "style" &lt;style&gt; e &lt;/style&gt;
+				</ol>
+				<style type="text/css">
+					#style {
+						color: red;
+					}
+				</style>				
+				<ol id="link">
+					3. Com a tag "link" chamando um arquivo externo (.css) com as formatações do html (esta é a forma mais praticada).					
+				</ol>
+				<ol>
+					4. Com o elemento "@import" que é utilizado no próprio css, no entanto, está não é uma boa prática. 
+				</ol>
+			</ul>
+			<p>
+				Desta forma temos que o "inline" é maior que a "tag style" que é maior que o "link"
+			</p>
+			<p>
+				Temos também as especificações de cálculos do CSS para aplicar a formatação (calculada pelo browser como uma soma de valores), como segue:
+			</p>
+			<ol>0 = universal selector, combinators e negation pseudo class (:not()).</ol>
+			<ol>1 = elemento type selector e pseudo-elements (::before, ::after)</ol>
+			<ol>10 = classes e atribute selectors ([type:”radio”]}</ol>
+			<ol>100 = ID seletor (#name)</ol>
+			<ol>1000 = Inline</ol>
+			<p>
+				É possível somar a força dos elementos. Ex. h1, .nome, #nome2 (força 1+10+100 = 111) o browser calcula a força para aplicar os estilos.
+			</p>
+			<p>
+				Por fim, temos a "regra importante" que sobrescreve qualquer estilo anterior. Ex. h1{color: red !important;} (qualquer h1 será red.)
+			</p>
+			<p>
+				Como o CSS é aplicado em cascata, precisamos lembrar que as configurações podem ser aplicadas umas sobre as outras, lembrando que a aplicação é feita de cima para baixo... logo, se temos uma formatação no início do arquivo css e fazemos uma nova formatação, do mesmo elemento depois, está será a formatação do elemento. Lembrando da aplicação dos elementos de força.
+			</p>
+			<p>
+				Um site interessante para aprofundar o css é <a href="https://tableless.github.io/iniciantes/manual/css/float-clear.html">GETTING STARTED</a>.
+			</p>
 		</div>
 	</body>
 </html>

@@ -27,6 +27,13 @@
 .semicirculo h2{
 	text-align: center;
 }
+.adc {
+  margin-left: 100px;
+  align-items: left ;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+}
 #movimento2 {
 	text-align: center;
 }

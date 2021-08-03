@@ -82,6 +82,7 @@
 		</div>
 		<div class="semicirculo">
 			<h2>Temos algumas figuras com movimento, dinâmicas, em html... pelo animateMotion e com outra construção...</h2>
+			<!-- primeira figura com movimento circular. -->
 			<svg viewBox="0 0 300 100" xmlns="namespace XML" id="movimento1"><!-- box de visualização de svg -->
 				<!-- aqui temos o caminho desenhado -->
 				<path fill="none" stroke="lightgrey"
@@ -93,6 +94,33 @@
 				</circle>
 			</svg>
 		</div>
+<!-- aqui temos outra forma com movimento perene -->
+<div class="semicirculo">
+	<h2>Temos outra forma geométrica</h2>
+	<!-- primeira figura com movimento circular. -->
+	<svg viewBox="0 0 300 100" xmlns="namespace XML" id="movimento1"><!-- box de visualização de svg -->
+		<!-- aqui temos o caminho desenhado -->
+		<path fill="none" stroke="lightgrey"
+			d="M10,50 C10,-50 180,150 180,50 C180-50 10,150 10,50 z" />
+		<!-- aqui temos a bolinha sobre o caminho -->
+		<circle r="2" fill="green">
+			<animateMotion dur="5s" repeatCount="indefinite"
+				path="M10,50 C10,-50 180,150 180,50 C180-50 10,150 10,50 z" />
+		</circle>
+	</svg>
+	<!-- logo ADC -->
+	<svg class="adc" width="300" height="300" viewBox="-10 -10 720 720" fill="none" xmlns="www.aprendadireitocompleto.com.br">
+		<path d="M700 350L0 0L125.434 350L0 700L700 350Z" fill="#4C8E11" fill-opacity="0.6"/>
+		<circle r="10" fill="green">
+			<animateMotion dur="8s" repeatCount="indefinite"
+				path="M700 350L0 0L125.434 350L0 700L700 350Z" />
+		</circle>
+		</svg>
+</div>
+
+
+<!-- aqui temos um retãngulo com um arco em movimento -->
+
 		<div class="semicirculo" id="movimento2">
 			<svg width="50%" height="50%"  viewBox="0 0 500 300"
      xmlns="http://www.w3.org/2000/svg"
@@ -107,6 +135,8 @@
 				<circle cx="100" cy="250" r="17.64" fill="blue"  />
 				<circle cx="250" cy="100" r="17.64" fill="blue"  />
 				<circle cx="400" cy="250" r="17.64" fill="blue"  />
+<!-- Aqui temos um quadrado com o mesmo efeito -->
+
 
 				<!-- Aqui está um triângulo que será movido ao longo do caminho do movimento. É definido com uma orientação vertical com a base no triângulo centralizado horizontalmente logo acima da origem. -->
 				<path d="M-25,-12.5 L25,-12.5 L 0,-87.5 z"
